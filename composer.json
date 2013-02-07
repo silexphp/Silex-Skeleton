@@ -17,7 +17,8 @@
         "symfony/security": "2.1.*",
         "symfony/translation": "2.1.*",
         "symfony/twig-bridge": "2.1.*",
-        "symfony/validator": "2.1.*"
+        "symfony/validator": "2.1.*",
+        "sensiolabs/silex-web-profiler": "1.0.0"
     },
     "minimum-stability": "dev",
     "autoload": {
