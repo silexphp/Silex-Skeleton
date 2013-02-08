@@ -10,7 +10,7 @@ require __DIR__.'/prod.php';
 $app['debug'] = true;
 
 $app->register(new MonologServiceProvider(), array(
-    'monolog.logfile' => __DIR__.'/../silex.log',
+    'monolog.logfile' => __DIR__.'/../logs/silex_dev.log',
 ));
 
 $app->register($p = new WebProfilerServiceProvider(), array(
