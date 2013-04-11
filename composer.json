@@ -1,6 +1,7 @@
 {
     "name": "fabpot/silex-skeleton",
     "license": "MIT",
+    "type": "project",
     "require": {
         "php": ">=5.3.3",
         "silex/silex": "1.0.*@dev",
