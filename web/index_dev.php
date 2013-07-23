@@ -1,8 +1,8 @@
 <?php
 
 use Symfony\Component\ClassLoader\DebugClassLoader;
-use Symfony\Component\HttpKernel\Debug\ErrorHandler;
-use Symfony\Component\HttpKernel\Debug\ExceptionHandler;
+use Symfony\Component\Debug\ErrorHandler;
+use Symfony\Component\Debug\ExceptionHandler;
 
 require_once __DIR__.'/../vendor/autoload.php';
 
