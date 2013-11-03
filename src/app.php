@@ -10,10 +10,7 @@ $app = new Application();
 $app->register(new UrlGeneratorServiceProvider());
 $app->register(new ValidatorServiceProvider());
 $app->register(new ServiceControllerServiceProvider());
-$app->register(new TwigServiceProvider(), array(
-    'twig.path'    => array(__DIR__.'/../templates'),
-    'twig.options' => array('cache' => __DIR__.'/../var/cache/twig'),
-));
+$app->register(new TwigServiceProvider());
 $app['twig'] = $app->share($app->extend('twig', function($twig, $app) {
     // add custom globals, filters, tags, ...
 
