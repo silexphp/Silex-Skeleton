@@ -20,7 +20,10 @@
         "symfony/security": "~2.3",
         "symfony/translation": "~2.3",
         "symfony/twig-bridge": "~2.3",
-        "symfony/validator": "~2.3"
+        "symfony/validator": "~2.3",
+        "kuikui/memcache-service-provider": "1.0.0",
+        "marcw/buzz-service-provider": "dev-master",
+        "royopa/respect-validation-service-provider": "dev-master"
     },
     "autoload": {
         "psr-0": { "": "src/" }
