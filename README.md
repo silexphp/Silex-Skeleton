@@ -38,7 +38,7 @@ Congratulations! You're now ready to use Silex.
 To see a real-live Silex page in action, start the PHP built-in web server with command:
 
 ```shell
-computer@mycomputer:~path/to/install# **php -S localhost:8000**
+computer@mycomputer:~path/to/install# *php -S localhost:8000*
 ```
 
 And access the following page:
