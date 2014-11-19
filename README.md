@@ -35,9 +35,15 @@ Composer will install Silex and all its dependencies under the
 
 Congratulations! You're now ready to use Silex.
 
-To see a real-live Silex page in action, access the following page:
+To see a real-live Silex page in action, start the PHP built-in web server with command:
 
-    web/index_dev.php/
+```shell
+computer@mycomputer:~path/to/install# **php -S localhost:8000**
+```
+
+And access the following page:
+
+    http://localhost:8000/web/
 
 3) Getting started with Silex
 -----------------------------
