@@ -25,7 +25,7 @@ http://getcomposer.org/ or just run the following command:
 
 Then, use the `create-project` command to generate a new Silex application:
 
-    php composer.phar create-project silexphp/Silex-Skeleton path/to/install
+    php composer.phar create-project fabpot/silex-skeleton path/to/install
 
 Composer will install Silex and all its dependencies under the
 `path/to/install` directory.
