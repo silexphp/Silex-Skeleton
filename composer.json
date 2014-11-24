@@ -5,8 +5,7 @@
     "type": "project",
     "require": {
         "php": ">=5.3.3",
-        "silex/silex": "~1.0",
-        "silex/web-profiler": "~1.0",
+        "silex/silex": "2.0.x-dev",
         "symfony/browser-kit": "~2.3",
         "symfony/class-loader": "~2.3",
         "symfony/config": "~2.3",
@@ -27,7 +26,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.1.x-dev"
+            "dev-master": "2.0.x-dev"
         }
     }
 }
