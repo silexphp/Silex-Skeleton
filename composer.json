@@ -29,5 +29,11 @@
         "branch-alias": {
             "dev-master": "2.0.x-dev"
         }
+    },
+    "scripts": {
+        "run": [
+            "echo 'Started web server on http://localhost:8888'",
+            "php -S localhost:8888 -t web/ web/index_dev.php"
+        ]
     }
 }
