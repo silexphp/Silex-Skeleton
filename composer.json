@@ -5,8 +5,8 @@
     "type": "project",
     "require": {
         "php": ">=5.3.3",
-        "silex/silex": "2.0.x-dev",
-        "silex/web-profiler": "2.0.x-dev",
+        "silex/silex": "~2.0@dev",
+        "silex/web-profiler": "~2.0@dev",
         "symfony/browser-kit": "~2.3",
         "symfony/class-loader": "~2.3",
         "symfony/config": "~2.3",
