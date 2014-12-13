@@ -28,7 +28,7 @@ command:
 .. code-block:: console
 
     $ cd path/to/install
-    $ php -S localhost:8888 -t web/ web/index_dev.php
+    $ composer run
 
 Then, browse to http://localhost:8888/.
 
