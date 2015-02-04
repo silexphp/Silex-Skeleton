@@ -14,7 +14,7 @@ $app->get('/', function () use ($app) {
 ->bind('homepage')
 ;
 
-$app->error(function (\Exception $e, $code) use ($app) {
+$app->error(function (\Exception $e, Request $request, $code) use ($app) {
     if ($app['debug']) {
         return;
     }
