@@ -1,0 +1,5 @@
+---------------------------------------------------------------------------
+
+by mTorres at 2015-01-30T17:55:04Z
+
+Can we have this merged? The current setup for master branch (using Silex 2.0@dev) does not handle errors properly and while in 'prod' environtment you get a White Screen Of Death (errors not shown), so it would be great to have this one.
