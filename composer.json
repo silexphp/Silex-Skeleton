@@ -4,7 +4,7 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": ">=5.3.3",
+        "php": ">=5.5.9",
         "silex/silex": "~2.0@dev",
         "silex/web-profiler": "~2.0@dev",
         "symfony/browser-kit": "~2.3",
