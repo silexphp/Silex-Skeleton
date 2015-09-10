@@ -2,7 +2,7 @@
 
 use Silex\WebTestCase;
 
-class ControllersTest extends WebTestCase
+class controllersTest extends WebTestCase
 {
     public function createApplication()
     {
