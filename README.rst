@@ -28,7 +28,7 @@ command:
 .. code-block:: console
 
     $ cd path/to/install
-    $ composer run
+    $ COMPOSER_PROCESS_TIMEOUT=0 composer run
 
 Then, browse to http://localhost:8888/.
 
