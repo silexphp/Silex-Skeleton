@@ -15,6 +15,7 @@
         "symfony/debug": "~2.3",
         "symfony/finder": "~2.3",
         "symfony/form": "~2.3",
+        "symfony/http-kernel": "2.8.0",
         "symfony/monolog-bridge": "~2.3",
         "symfony/process": "~2.3",
         "symfony/security": "~2.3",
