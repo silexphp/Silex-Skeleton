@@ -20,7 +20,8 @@
         "symfony/security": "~2.3",
         "symfony/translation": "~2.3",
         "symfony/twig-bridge": "~2.3",
-        "symfony/validator": "~2.3"
+        "symfony/validator": "~2.3",
+        "symfony/http-kernel": "^2.8"
     },
     "autoload": {
         "psr-0": { "": "src/" }
