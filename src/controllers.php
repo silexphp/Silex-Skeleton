@@ -14,6 +14,24 @@ $app->get('/', function () use ($app) {
 ->bind('homepage')
 ;
 
+$app->match('/form', function (Request $request) use ($app) {
+    /** @var \Symfony\Component\Form\Form $form */
+    $form = require __DIR__.'/forms/contact-form.php';
+
+    $form->handleRequest($request);
+    if ($form->isValid()) {
+        $app['session']->getFlashBag()->add('success', $app['translator']->trans('Form submitted.'));
+
+        return $app->redirect($app['url_generator']->generate('form'));
+    }
+
+    return $app['twig']->render('form.html.twig', [
+        'form' => $form->createView(),
+    ]);
+})
+->bind('form')
+;
+
 $app->error(function (\Exception $e, Request $request, $code) use ($app) {
     if ($app['debug']) {
         return;
