@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # If the requested filename exists, simply serve it.
+    # We only want to let Apache serve files and not directories.
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule .? - [L]
+
+    RewriteCond %{REQUEST_URI} index_dev\.php
+    RewriteRule .* index_dev.php [L]
+    RewriteRule .* index.php [L]
+</IfModule>

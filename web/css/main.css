@@ -1,0 +1,49 @@
+body {
+  padding-top: 65px;
+}
+body .control-label.required:after {
+  content: " *";
+  color: #f00;
+}
+#content .mt0 {
+  margin-top: 0    !important;
+}
+#content .mt5 {
+  margin-top: 5px  !important;
+}
+#content .mt10 {
+  margin-top: 10px !important;
+}
+#content .mt15 {
+  margin-top: 15px !important;
+}
+#content .mt20 {
+  margin-top: 20px !important;
+}
+#content .mt25 {
+  margin-top: 25px !important;
+}
+#content .mt30 {
+  margin-top: 30px !important;
+}
+#content .mb0 {
+  margin-bottom: 0    !important;
+}
+#content .mb5 {
+  margin-bottom: 5px  !important;
+}
+#content .mb10 {
+  margin-bottom: 10px !important;
+}
+#content .mb15 {
+  margin-bottom: 15px !important;
+}
+#content .mb20 {
+  margin-bottom: 20px !important;
+}
+#content .mb25 {
+  margin-bottom: 25px !important;
+}
+#content .mb30 {
+  margin-bottom: 30px !important;
+}
