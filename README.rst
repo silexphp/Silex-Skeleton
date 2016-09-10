@@ -13,7 +13,7 @@ Silex uses `Composer`_ to ease the creation of a new project:
 
 .. code-block:: console
 
-    $ composer create-project fabpot/silex-skeleton path/to/install ~2.0
+    $ composer create-project fabpot/silex-skeleton path/to/install "~2.0"
 
 Composer will create a new Silex project under the `path/to/install` directory.
 
