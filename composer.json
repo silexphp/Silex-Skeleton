@@ -34,7 +34,7 @@
     "scripts": {
         "run": [
             "echo 'Started web server on http://localhost:8888'",
-            "php -S localhost:8888 -t web"
+            "php -S localhost:8888 -t web/index_dev.php"
         ]
     }
 }
