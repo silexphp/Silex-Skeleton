@@ -1,0 +1,16 @@
+{% extends "layout.html.twig" %}
+
+{% block subtitle %}Form Sample{% endblock %}
+
+{% block content %}
+    <ul class="nav nav-tabs mb15">
+        <li><a href="{{ url('homepage') }}">Home</a></li>
+        <li class="active"><a>Form Sample</a></li>
+    </ul>
+
+    <div class="row">
+        <div class="col-sm-6">
+            {{ form(form) }}
+        </div>
+    </div>
+{% endblock %}

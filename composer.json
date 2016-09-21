@@ -21,7 +21,10 @@
         "symfony/security": "~2.8|3.0.*",
         "symfony/translation": "~2.8|3.0.*",
         "symfony/twig-bridge": "~2.8|3.0.*",
-        "symfony/validator": "~2.8|3.0.*"
+        "symfony/validator": "~2.8|3.0.*",
+        "twbs/bootstrap": "~3.0",
+        "select2/select2": "^4.0",
+        "fortawesome/font-awesome": "^4.6"
     },
     "autoload": {
         "psr-0": { "": "src/" }
@@ -35,6 +38,12 @@
         "run": [
             "echo 'Started web server on http://localhost:8888'",
             "php -S localhost:8888 -t web"
+        ],
+        "post-install-cmd": [
+            "ln -sf $(pwd)/vendor/twbs/bootstrap/dist web/lib/bootstrap",
+            "ln -sf $(pwd)/vendor/select2/select2/dist web/lib/select2",
+            "mkdir -p web/lib/select2-bootstrap && cd $_ && curl -sS https://raw.githubusercontent.com/select2/select2-bootstrap-theme/master/dist/select2-bootstrap.min.css > select2-bootstrap.min.css && cd -",
+            "ln -sf $(pwd)/vendor/fortawesome/font-awesome web/lib/font-awesome"
         ]
     }
 }
