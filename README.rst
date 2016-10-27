@@ -69,9 +69,9 @@ Enjoy!
 
 .. _Composer: http://getcomposer.org/
 .. _Documentation: http://silex.sensiolabs.org/documentation
-.. _ValidatorServiceProvider: http://silex.sensiolabs.org/doc/providers/validator.html
-.. _ServiceControllerServiceProvider: http://silex.sensiolabs.org/doc/providers/service_controller.html
-.. _TwigServiceProvider: http://silex.sensiolabs.org/doc/providers/twig.html
+.. _ValidatorServiceProvider: http://silex.sensiolabs.org/doc/master/providers/validator.html
+.. _ServiceControllerServiceProvider: http://silex.sensiolabs.org/doc/master/providers/service_controller.html
+.. _TwigServiceProvider: http://silex.sensiolabs.org/doc/master/providers/twig.html
 .. _WebProfilerServiceProvider: http://github.com/silexphp/Silex-WebProfiler
-.. _MonologServiceProvider: http://silex.sensiolabs.org/doc/providers/monolog.html
+.. _MonologServiceProvider: http://silex.sensiolabs.org/doc/master/providers/monolog.html
 .. _Providers: http://silex.sensiolabs.org/doc/providers.html
