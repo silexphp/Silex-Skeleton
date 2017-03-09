@@ -1,5 +1,10 @@
 {% extends "layout.html.twig" %}
 
 {% block content %}
-    Welcome to your new Silex Application!
+    <ul class="nav nav-tabs mb15">
+        <li class="active"><a>Home</a></li>
+        <li><a href="{{ url('form') }}">Form Sample</a></li>
+    </ul>
+
+    <p>Welcome to your new Silex Application!</p>
 {% endblock %}

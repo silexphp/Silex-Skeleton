@@ -1,5 +1,5 @@
 {
-    "name": "fabpot/silex-skeleton",
+    "name": "ttskch/silex-skeleton",
     "description": "A pre-configured skeleton for the Silex microframework",
     "license": "MIT",
     "type": "project",
@@ -7,24 +7,27 @@
         "php": ">=5.5.9",
         "silex/silex": "~2.0",
         "silex/web-profiler": "~2.0",
-        "symfony/asset": "~2.8|3.0.*",
-        "symfony/browser-kit": "~2.8|3.0.*",
-        "symfony/class-loader": "~2.8|3.0.*",
-        "symfony/config": "~2.8|3.0.*",
-        "symfony/console": "~2.8|3.0.*",
-        "symfony/css-selector": "~2.8|3.0.*",
-        "symfony/debug": "~2.8|3.0.*",
-        "symfony/finder": "~2.8|3.0.*",
-        "symfony/form": "~2.8|3.0.*",
-        "symfony/monolog-bridge": "~2.8|3.0.*",
-        "symfony/process": "~2.8|3.0.*",
-        "symfony/security": "~2.8|3.0.*",
-        "symfony/translation": "~2.8|3.0.*",
-        "symfony/twig-bridge": "~2.8|3.0.*",
-        "symfony/validator": "~2.8|3.0.*"
+        "symfony/asset": "~2.8|^3.0",
+        "symfony/browser-kit": "~2.8|^3.0",
+        "symfony/class-loader": "~2.8|^3.0",
+        "symfony/config": "~2.8|^3.0",
+        "symfony/console": "~2.8|^3.0",
+        "symfony/css-selector": "~2.8|^3.0",
+        "symfony/debug": "~2.8|^3.0",
+        "symfony/finder": "~2.8|^3.0",
+        "symfony/form": "~2.8|^3.0",
+        "symfony/monolog-bridge": "~2.8|^3.0",
+        "symfony/process": "~2.8|^3.0",
+        "symfony/security": "~2.8|^3.0",
+        "symfony/translation": "~2.8|^3.0",
+        "symfony/twig-bridge": "~2.8|^3.0",
+        "symfony/validator": "~2.8|^3.0",
+        "twbs/bootstrap": "^3.0",
+        "select2/select2": "^4.0",
+        "fortawesome/font-awesome": "^4.6"
     },
     "autoload": {
-        "psr-0": { "": "src/" }
+        "psr-4": { "Ttskch\\": "src/services" }
     },
     "extra": {
         "branch-alias": {
@@ -33,8 +36,15 @@
     },
     "scripts": {
         "run": [
+            "composer run-script post-install-cmd",
             "echo 'Started web server on http://localhost:8888'",
             "php -S localhost:8888 -t web"
+        ],
+        "post-install-cmd": [
+            "ln -sf ../../vendor/twbs/bootstrap/dist web/lib/bootstrap",
+            "ln -sf ../../vendor/select2/select2/dist web/lib/select2",
+            "mkdir -p web/lib/select2-bootstrap && cd $_ && curl -sS https://raw.githubusercontent.com/select2/select2-bootstrap-theme/master/dist/select2-bootstrap.min.css > select2-bootstrap.min.css && cd -",
+            "ln -sf ../../vendor/fortawesome/font-awesome web/lib/font-awesome"
         ]
     }
 }

@@ -1,0 +1,74 @@
+{% extends 'form_div_layout.html.twig' %}
+
+
+{% block form_row -%}
+    <div class="form-group {% if errors|length %}has-error{% endif %}">
+        {{- form_label(form) -}}
+        {{- form_errors(form) -}}
+        {{- form_widget(form) -}}
+    </div>
+{%- endblock form_row %}
+
+
+{# just add class="control-label" #}
+{%- block form_label -%}
+    {% set label_attr = label_attr|merge({ class: label_attr.class|default('') ~ ' control-label' }) %}
+    {{ parent() }}
+{%- endblock form_label -%}
+
+
+{% block form_errors -%}
+    {%- for error in errors|default([]) -%}
+        <div class="alert alert-danger form-error">{{ error.message|trans }}</div>
+    {%- endfor -%}
+{%- endblock form_errors %}
+
+
+{% block choice_widget_expanded -%}
+    <div class="row">
+        <div class="col-sm-12">
+            {%- for child in form %}
+                <div class="{% if multiple %}checkbox{% else %}radio{% endif %}{% if 'inline' in attr.class|default('') %}-inline{% endif %}">
+                    <label style="font-weight: normal;">
+                        {{- form_widget(child) -}}
+                        {{ child.vars.label }}
+                    </label>
+                </div>
+            {% endfor -%}
+        </div>
+    </div>
+{% endblock choice_widget_expanded %}
+
+
+{# just add class="form-control" #}
+{%- block choice_widget_collapsed -%}
+    {% set attr = attr|merge({ class: attr.class|default('') ~ ' form-control' }) %}
+    {{ parent() }}
+{%- endblock choice_widget_collapsed -%}
+
+
+{# just add class="form-control" #}
+{%- block form_widget_simple -%}
+    {% set attr = attr|merge({ class: attr.class|default('') ~ ' form-control' }) %}
+    {{ parent() }}
+{%- endblock form_widget_simple -%}
+
+
+{# just add class="form-control" #}
+{%- block textarea_widget -%}
+    {% set attr = attr|merge({ class: attr.class|default('') ~ ' form-control' }) %}
+    {{ parent() }}
+{%- endblock textarea_widget -%}
+
+
+{% block form_end -%}
+    {% if not render_rest is defined or render_rest %}
+        {{- form_rest(form) -}}
+    {% endif -%}
+    <div class="row">
+        <div class="col-sm-12">
+            <button class="btn btn-primary">{{ 'Send'|trans({}, translation_domain) }}</button>
+        </div>
+    </div>
+    </form>
+{%- endblock form_end %}
