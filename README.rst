@@ -28,7 +28,8 @@ command:
 .. code-block:: console
 
     $ cd path/to/install
-    $ COMPOSER_PROCESS_TIMEOUT=0 composer run
+    $ COMPOSER_PROCESS_TIMEOUT=0 composer run  OR
+    $ php -S localhost:8888 -t web
 
 Then, browse to http://localhost:8888/index_dev.php/
 
