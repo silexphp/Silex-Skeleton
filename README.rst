@@ -1,6 +1,9 @@
 Silex Skeleton
 ==============
 
+**WARNING**: Silex is in maintenance mode only. Ends of life is set to June
+2018. Read more on [Symfony's blog](http://symfony.com/blog/the-end-of-silex).
+
 Welcome to the Silex Skeleton - a fully-functional Silex application that you
 can use as the skeleton for your new applications.
 
