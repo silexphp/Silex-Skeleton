@@ -2,7 +2,7 @@ Silex Skeleton
 ==============
 
 **WARNING**: Silex is in maintenance mode only. Ends of life is set to June
-2018. Read more on [Symfony's blog](http://symfony.com/blog/the-end-of-silex).
+2018. Read more on `Symfony's blog`_.
 
 Welcome to the Silex Skeleton - a fully-functional Silex application that you
 can use as the skeleton for your new applications.
@@ -78,3 +78,5 @@ Enjoy!
 .. _WebProfilerServiceProvider: http://github.com/silexphp/Silex-WebProfiler
 .. _MonologServiceProvider: http://silex.sensiolabs.org/doc/master/providers/monolog.html
 .. _Providers: http://silex.sensiolabs.org/doc/providers.html
+.. _Symfony's blog: http://symfony.com/blog/the-end-of-silex
+
