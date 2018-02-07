@@ -79,4 +79,3 @@ Enjoy!
 .. _MonologServiceProvider: http://silex.sensiolabs.org/doc/master/providers/monolog.html
 .. _Providers: http://silex.sensiolabs.org/doc/providers.html
 .. _Symfony's blog: http://symfony.com/blog/the-end-of-silex
-
