@@ -65,6 +65,13 @@ The Silex Skeleton is configured with the following service providers:
 
 * `MonologServiceProvider`_ - Enable logging in the development environment.
 
+* `HttpFragmentServiceProvider`_ - Provides support for the Symfony fragment
+  sub-framework, which allows you to embed fragments of HTML in a template.
+
+* `AssetServiceProvider`_ - Provides a way to manage URL generation and
+  versioning of web assets such as CSS stylesheets, JavaScript files and
+  image files.
+
 Read the `Providers`_ documentation for more details about Silex Service
 Providers.
 
@@ -77,5 +84,7 @@ Enjoy!
 .. _TwigServiceProvider: http://silex.sensiolabs.org/doc/master/providers/twig.html
 .. _WebProfilerServiceProvider: http://github.com/silexphp/Silex-WebProfiler
 .. _MonologServiceProvider: http://silex.sensiolabs.org/doc/master/providers/monolog.html
+.. _HttpFragmentServiceProvider: http://silex.sensiolabs.org/doc/master/providers/http_fragment.html
+.. _AssetServiceProvider: http://silex.sensiolabs.org/doc/master/providers/asset.html
 .. _Providers: http://silex.sensiolabs.org/doc/providers.html
 .. _Symfony's blog: http://symfony.com/blog/the-end-of-silex
